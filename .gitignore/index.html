@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" id="content">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Video Chat</title>
+        <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap"
+        rel="stylesheet"
+        />
+      <link rel="stylesheet" href="./styles.css" />
+        <script src="./lib/jquery.js"></script>
+        <script src="./lib/peer.js"></script>
+        <script src="./lib/socket.io.js"></script>
+    </head>
+
+    <body id="body" class="body">
+
+        <header class="header">
+                <div class="logo-container">
+                  <img src="./img/doge.png" alt="doge logo" class="logo-img" />
+                  <h1 class="logo-text">
+                    Video<span class="logo-highlight">Chat</span>
+                  </h1>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react-dom.js"></script>
+      
+                <div class="sk-cube-grid" onclick="switchScreen()">
+                  <div class="sk-cube sk-cube1"></div>
+                  <div class="sk-cube sk-cube2"></div>
+                  <div class="sk-cube sk-cube3"></div>
+                  <div class="sk-cube sk-cube4"></div>
+                  <div class="sk-cube sk-cube5"></div>
+                  <div class="sk-cube sk-cube6"></div>
+                  <div class="sk-cube sk-cube7"></div>
+                  <div class="sk-cube sk-cube8"></div>
+                  <div class="sk-cube sk-cube9"></div>
+                </div>
+              </div>
+          </header>
+        <div id="divSubmit" class="submitName-panel">
+            <br /><br />
+            <input type="text" id="txtUserName" placeholder="Enter your name" class="submitName-panel">
+            <button id="btnSubmit" > Sumit</button>
+        </div>
+
+        <div id="divChat" class="chat-panel" >
+            <p class="active-users-panel">Online User : </p>
+            <ul id="ulUser" class="ul-style"></ul>
+            <h3 id="CallingTo"></h3>
+            <div id="divVideo">
+              <video id="localStream" width="300" controls></video>
+              <br /><br />
+              <video id="remoteStream" width="300" controls></video>
+            </div>
+            <div id="divMessage" >
+            <div id="messageLog" class="rainbow">
+            </div>
+            <div class="txtBox">
+              <input type="text" id="txtMesssage">
+              <input type="button" id="btnSend" value="Send">
+            </div>
+          </div>
+        </div>
+    </body>
+    <footer></footer>
+ <script src="main.js"></script>
+</html>
